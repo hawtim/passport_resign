@@ -1,0 +1,79 @@
+@charset "utf-8";
+@import "compass/reset";
+/*！====以上是rest样式======*/
+@import "compass/css3";
+@import "compass/utilities";
+@import "compass/utilities/sprites";
+@mixin images{background:url(../img/images-ems/images.png) no-repeat;background-size:34.0rem 7.7rem; }
+@mixin ico-arrow-down{height:2.1rem;width:3.8rem;background-position: 0 0;}
+@mixin img-bg-dot-3{height:5.0rem;width:5.0rem;background-position: -7.4rem 0;}
+@mixin img-bg-dot-4{height:5.0rem;width:5.0rem;background-position: -12.8rem 0;}
+@mixin img-bg-dot-2{height:5.0rem;width:5.0rem;background-position: -18.2rem 0;}
+@mixin img-bg-dot{height:5.0rem;width:5.0rem;background-position: -23.6rem 0;}
+@mixin img-bg-dot-1{height:5.0rem;width:5.0rem;background-position: -28.9rem 0;}
+@mixin logo-wechat{height:2.2rem;width:7.0rem;background-position: 0 -2.5rem;}
+@mixin logo-group{height:2.2rem;width:28.1rem;background-position: 0 -5.4rem;}
+
+/*=================公用资源=============*/
+.clearfix {zoom:1}
+.clearfix:after {content: ' '; display: block; clear: both;}
+a{display: block;height:7.4*0.5rem;line-height: 7.4*0.5rem;text-align: center;text-decoration: none;color:#fff}
+.logo-wechat{@include box-sizing(content-box);display: block;width: 13.9*0.5rem;height: 4.5*0.5rem;
+	@include images;@include logo-wechat;}
+.lp1{position: relative;left:2.1*0.5rem;top: 2.5*0.5rem;}
+.lp2, .lp3{position: relative;left: 2.1*0.5rem;top: 15.4*0.5rem;}
+.button{width:28.5*0.5rem;height: 7.4*0.5rem;@include border-radius(1.5*0.5rem);font-size: 3.0*0.5rem;}
+.ico-arrow-down{display: block;width:7.6*0.5rem; height: 4.2*0.5rem;margin: 0 auto; position: relative; left: auto; bottom: 1.0*0.5rem;@include images;@include ico-arrow-down;}
+.ad1{position: relative;top:/* 1008-925-42 */4.1*0.5rem;}
+.ad2{position: relative;top:/* 1008-472+1136-1052-42 */57.8*0.5rem;}
+.ad3{position: relative;top:/* -975+1053 */7.8*0.5rem;}
+// .img-main{display: block;}
+/*=============文档自带样式=============*/
+html{
+	font-size: 10px;
+	font-family: 'Helvetica';
+}
+body{
+	font-size: 1.6rem;
+	background-color: #fff;
+	 font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+	// overflow: hidden-x;
+}
+div.wrapper{width:100%; margin: 0 auto;position: relative;}
+.pone{position: relative;width: 100%;height: 100.8*0.5rem;/* @include images;@include img-bg-dot-1;background-repeat:repeat; */ background: #0DA147 url(../img/images-ems/img-bg-dot-1.png) 0 0 repeat;
+	.title{width: 42.9*0.5rem;height: 79.4*0.5rem;margin-left: 11.0*0.5rem;margin-top: 3.0*0.5rem; }
+	.img-main-1{width: 58.3*0.5rem;height: 47.1*0.5rem;	position: absolute;top:32.9*0.5rem;left:2.8*0.5rem;}
+}
+.ptwo{position: relative;height: 113.6*0.5rem;background: #FF9D80 url(../img/images-ems/img-bg-dot-2.png) 0 0 repeat;
+	.title{width: 51.9*0.5rem;height: 28.4*0.5rem;margin-left: 6.0*0.5rem;margin-top: /* 185-45 */14.0*0.5rem; }
+	// .bg-inturn{width: 63.0*0.5rem;height: 21.6*0.5rem;position: absolute;left: 1.0*0.5rem;top: 55.4*0.5rem;}
+	.img-main-female{ width:31.5rem;height:21.4rem; position: absolute;left:0.5rem;top:/* 493-45 */44.8*0.5rem;}
+}
+.pthree{position: relative;height: 113.6*0.5rem;background: #E97C03 url(../img/images-ems/img-bg-dot-3.png) 0 0 repeat;
+	.title{width: 57.9*0.5rem;height: 32.2*0.5rem;margin-left: .0*0.5rem;margin-top: /* 172-45 */12.7*0.5rem; }
+	.img-main{width: 44.3*0.5rem;height: 47.5*0.5rem;position: relative;left:8.4*0.5rem;top: /* -497+489 */-.8*0.5rem;}
+}
+.pfour{position: relative;height: auto;background: #1553A7 url(../img/images-ems/img-bg-dot-4.png) 0 0 repeat;
+	.title{width: 47.8*0.5rem;height: 16.4*0.5rem;margin-left: 8.1*0.5rem;margin-top: 15.8*0.5rem; }
+	.img-main{width: 32rem;height: 30.8rem;position: relative;top:0.3rem;left:0;}
+	// .img-main-lh{width:29.1*0.5rem; height:18.8*0.5rem; position: relative;top:62.2*0.5-17+9.4rem;left:.0*0.5rem;z-index: 3;}
+	// .img-main-rh{width:54.5*0.5rem; height:61.6*0.5rem; position: relative;top:/* .3*0.5rem; */17-26rem;right:-9.5*0.5rem;z-index:2;}
+	.ft{width: 100%;position: relative;z-index:999;background: #FFF;}
+	.rightnow{background: #1450A2;position: absolute;top: 2.3*0.5rem;left: 2.4*0.5rem;/* margin-right: 2.4*0.5rem; */}
+	.share{position: absolute;top: 2.3*0.5rem;right: 2.4*0.5rem;background: #F08003;}
+	.logo-group{height:4.5*0.5rem; width:56.2*0.5rem;margin-left: 3.9*0.5rem;margin-top: 12.1*0.5rem;}
+}
+
+// 媒介查询语句
+// @media screen and (max-width:320px){html{font-size:12*0.834px}}
+// @media screen and (min-width:360px)and (max-width:374px){html{font-size:11.72875px}}
+// @media screen and (min-width:375px)and (max-width:383px){html{font-size:12px}}
+// @media screen and (min-width:384px)and (max-width:399px){html{font-size:12.5px}}
+// @media screen and (min-width:400px)and (max-width:413px){html{font-size:12.9375px}}
+// @media screen and (min-width:414px)and (max-width:423px){html{font-size:13.5px}}
+// @media screen and (min-width:424px)and (max-width:479px){html{font-size:15px}}
+// @media screen and (min-width:480px)and (max-width:539px){html{font-size:16.875px}}
+// @media screen and (min-width:540px)and (max-width:599px){html{font-size:18.75px}}
+// @media screen and (min-width:600px)and (max-width:639px){html{font-size:20px}}
+// @media screen and (min-width:640px)and (max-width:719px){html{font-size:22.5px}}
+// @media screen and (min-width:720px){html{font-size:25px}}
