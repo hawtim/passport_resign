@@ -8,7 +8,7 @@
 	<li>Demo预览</li>
 </ul>
 <h2>Demo二维码，请用手机扫描</h2>
-<p><img src= "https://raw.githubusercontent.com/hawtim/world_cup_pages/master/1457367256.png" width="200" height="200"></p>
+<p><img src= "https://raw.githubusercontent.com/hawtim/passport_resign/master/1457367256.png" width="200" height="200"><a href="https://raw.githubusercontent.com/hawtim/passport_resign/master/1457367256.png">如果二维码无法加载，请点击这里</a></p>
 
 <h2>项目三 Ver1.0 2016.02.10</h2>
 <h3>目录</h3>
