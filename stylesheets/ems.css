@@ -168,6 +168,12 @@ p {
   content: "";
   display: block; }
 
+.no-copy {
+  -moz-user-select: -moz-none;
+  -ms-user-select: none;
+  -webkit-user-select: none;
+  user-select: none; }
+
 a {
   color: #fff;
   display: block;
@@ -437,6 +443,7 @@ body {
     height: 2.2rem;
     width: 28.1rem; }
 
+/*！ ============媒介查询语句========= */
 @media screen and (max-width: 320px) {
   html {
     font-size: 10px; } }

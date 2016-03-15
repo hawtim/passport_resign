@@ -2,23 +2,16 @@
 <h2>项目三  Ver1.1 2016.03.03</h2>
 <h2>改进之处</h2>
 <ul>
-	<li>减少span和div无语义标签</li>
-	<li>自适应布局的优化</li>
-	<li>性能优化</li>
-	<li>Demo预览</li>
+	<li>语意化html，减少标签嵌套，代码规范</li>
+	<li>大幅度优化图片资源，提高页面打开速度</li>
+	<li>完成js滑屏，添加箭头动画</li>
+	<li>挂载腾讯云，Demo预览</li>
 </ul>
 <h2>Demo二维码，请用手机扫描</h2>
-<p><img src= "https://raw.githubusercontent.com/hawtim/passport_resign/master/1457367256.png" width="200" height="200"><br>
-	如果二维码无法加载，<a href="https://raw.githubusercontent.com/hawtim/passport_resign/master/1457367256.png">请点击这里</a></p>
-<p>在PC端预览，<a href="http://htmlpreview.github.io/?https://github.com/hawtim/passport_resign/blob/master/index.html">请点击</a></p>
-<h2>此页面为仅为学习所做Demo</h2>
-<h2>改进之处</h2>
-<ul>
-	<li>修复界面布局错误</li>
-	<li>优化CSS结构，注重模块化开发</li>
-	<li>DOM完成页面验证交互功能</li>
-	<li>Demo预览</li>
-</ul>
+<p><img src= "https://raw.githubusercontent.com/hawtim/passport_resign/master/1458049271.png" width="200" height="200"><br>
+	如果二维码无法加载，<a href="https://raw.githubusercontent.com/hawtim/passport_resign/master/1458049271.png">请点击这里</a></p>
+<p>在PC端预览，<a href="http://119.29.158.242/thirdProgram/">请点击</a></p>
+
 
 <h2>项目三 Ver1.0 2016.02.10</h2>
 <h3>目录</h3>
@@ -54,11 +47,18 @@
 	<h3>问题分析</h3>
 <ol>
 	<li>
-		<h4></h4>
+		<h4>一开始在小屏幕下该框架不知如何适配，视觉上在chrome Dev中iphone4、5大小的屏幕只能显示局部内容。实际测试中，iphone5能够显示所有页面布局。但魅族浏览器不支持直接写transform：translateX/Y，在sass下需要写@include transform（translateX/Y（-50%））；（即需要补充前缀）。
+</h4>
 		<p class="answer">&nbsp;</p>
 	</li>
 	<li>
-		<h4></h4>
+		<h4>
+			<ul>
+				<li>页面的结构比较简单，主要还是在js框架第一次接触问题不懂的地方比较多，套入框架模板之后，自动设置width：100%，height:100%;</li>
+				<li>测试机型为魅蓝note和iphone5。CSS抽出公共样式实现代码复用。此页面主要在于图片多，而且普遍比较大，更多涉及图片的处理。</li>
+				<li>主要问题在于图片的压缩，大小和视觉的权衡。这次png使用<a href="https://tinypng.com/">tinypng.com/</a>来处理，压缩之后小了很多，但是图片会有些模糊，使用PNGOUT压缩比图片大小减少不多。</li>
+			</ul>
+		</h4>
 		<p class="answer">&nbsp;</p>
 	</li>
 </ol>
